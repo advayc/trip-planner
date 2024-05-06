@@ -27,11 +27,7 @@ function getItinerary(event) {
   }).then(result => result.json()).then(eventsResponse => {
       console.log(eventsResponse)
       const events = JSON.parse(eventsResponse.choices[0].message.content)
-  
-  
-  
       let htmlGenerated = ""
-  
       for (const event of events) {
         //add it on
         htmlGenerated += `<div>
