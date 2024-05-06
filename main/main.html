@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <style src="styles.css"></style>
     <title>trip planner</title>
 </head>
 <body>
     <p>ai trip planner</p>
-    <form>
+    <form onsubmit="getItinerary(event)">
     <input type="text" name="location">
     <input type="date" name="start-date">
     <input type="date" name="end-date">
     <input placeholder="enter type of activity" name="activity-type">
     <input placeholder="enter budget" type="number" name="budget">
-    <input type="submit" id="submit">
+    <input type="submit" value="submit" id="submit">
     </form>
 </body>
 </html>
